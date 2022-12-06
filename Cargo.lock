@@ -7,7 +7,6 @@ name = "PROJ3"
 version = "0.1.0"
 dependencies = [
  "eframe",
- "inline-python",
  "tracing-subscriber",
 ]
 
@@ -717,28 +716,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "inline-python"
-version = "0.10.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "211fb7fb668ad51bc03eb45ace2d6b677af6777137abf2ae5fcd1d1136d8950d"
-dependencies = [
- "inline-python-macros",
- "pyo3",
-]
-
-[[package]]
-name = "inline-python-macros"
-version = "0.10.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7c11adf3d765e0528063fde8c10e3a3e3e2a75bdeafd3c0a6841a8f72b37944c"
-dependencies = [
- "libc",
- "proc-macro2",
- "pyo3",
- "quote",
-]
-
-[[package]]
 name = "instant"
 version = "0.1.12"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1199,40 +1176,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "pyo3"
-version = "0.17.3"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "268be0c73583c183f2b14052337465768c07726936a260f480f0857cb95ba543"
-dependencies = [
- "cfg-if",
- "libc",
- "memoffset",
- "parking_lot",
- "pyo3-build-config",
- "pyo3-ffi",
-]
-
-[[package]]
-name = "pyo3-build-config"
-version = "0.17.3"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "28fcd1e73f06ec85bf3280c48c67e731d8290ad3d730f8be9dc07946923005c8"
-dependencies = [
- "once_cell",
- "target-lexicon",
-]
-
-[[package]]
-name = "pyo3-ffi"
-version = "0.17.3"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0f6cb136e222e49115b3c51c32792886defbfb0adead26a688142b346a0b9ffc"
-dependencies = [
- "libc",
- "pyo3-build-config",
-]
-
-[[package]]
 name = "quote"
 version = "1.0.21"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1433,12 +1376,6 @@ dependencies = [
  "quote",
  "unicode-ident",
 ]
-
-[[package]]
-name = "target-lexicon"
-version = "0.12.5"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9410d0f6853b1d94f0e519fb95df60f29d2c1eff2d921ffdf01a4c8a3b54f12d"
 
 [[package]]
 name = "thiserror"

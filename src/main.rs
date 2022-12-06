@@ -1,6 +1,6 @@
 //#![cfg_attr(not(debug_assertions), windows_subsystem = "windows")] 
 use eframe::egui;
-use inline_python::python;
+//use inline_python::python;
 use std::fs;
 use std::process::Command;
 
@@ -100,7 +100,7 @@ impl eframe::App for MyApp {
                 let mut p2 = Command::new("./ffmpeg.exe").arg("-i").arg("temp.mp3").arg("-ab").arg("320k").arg(&self.outa).spawn().unwrap();
                 p1.wait().unwrap();
                 p2.wait().unwrap();
-                python!{print("End......")}
+                //python!{print("End......")}
             }
             ui.label(format!("au:{},vi:{}",self.audio,self.video));
             ui.horizontal(|ui| {
